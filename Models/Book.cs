@@ -11,7 +11,7 @@ namespace SimpleLibraryManagement.Models
     {
         public int Id { get; set; }  // Unique identifier for each book
         public string Title  { get; set; }  // Title of the book
-        public string Author  { get; set; }
+        public string Author  { get; set; }   // Author of the book
         public bool IsAvailable { get; set; }
     }
 }
