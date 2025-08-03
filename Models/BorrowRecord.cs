@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace SimpleLibraryManagement.Models
 {
-    internal class BorrowRecord
+    public  class BorrowRecord
     {
+        public int BRId { get; set; }
+
+
     }
 }
