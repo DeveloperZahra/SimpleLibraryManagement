@@ -10,7 +10,7 @@ namespace SimpleLibraryManagement.Models
     public class BorrowRecord
     {
         public int BRId { get; set; }   // Unique identifier for the borrow record
-        public int MemberId { get; set; } 
+        public int MemberId { get; set; } // ID of the member who borrowed the book
         public int BookId { get; set; }
         public DateTime BorrowDate { get; set; }
         public DateTime ReturnDate { get; set; } 
