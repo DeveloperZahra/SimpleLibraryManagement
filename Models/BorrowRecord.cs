@@ -13,7 +13,7 @@ namespace SimpleLibraryManagement.Models
         public int MemberId { get; set; } // ID of the member who borrowed the book
         public int BookId { get; set; }     // ID of the book being borrowed
         public DateTime BorrowDate { get; set; }    // Date when the book was borrowed
-        public DateTime ReturnDate { get; set; } 
+        public DateTime ReturnDate { get; set; } // Expected return date of the borrowed book
 
 
     }
