@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace SimpleLibraryManagement.Models
 {
-    public  class BorrowRecord
+    // This class represents a record of a book being borrowed by a member
+    public class BorrowRecord
     {
         public int BRId { get; set; }
+        public int MemberId { get; set; } 
+        public int BookId { get; set; }
+        public DateTime BorrowDate { get; set; }
+        public DateTime ReturnDate { get; set; } 
 
 
     }
