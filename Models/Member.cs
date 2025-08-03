@@ -10,6 +10,6 @@ namespace SimpleLibraryManagement.Models
     internal class Member
     {
         public int Id { get; private set; } // Unique identifier for each member (set privately, read-only from outside)
-        public string Name { get;  set; }
+        public string Name { get;  set; }    // Name of the member
     }
 }
