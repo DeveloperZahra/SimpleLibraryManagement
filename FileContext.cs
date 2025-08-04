@@ -36,8 +36,8 @@ namespace SimpleLibraryManagement
             File.WriteAllText(BookFilePath, json); // Write the JSON string to the file, overwriting any existing content
         }
 
-       
-        public static List<Member> LoadMembers()
+        // Load the list of member form the JSON file 
+        public static List<Member> LoadMembers() 
         {
             if (!File.Exists(MemberFilePath))
                 return new List<Member>();
