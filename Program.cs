@@ -68,6 +68,7 @@ namespace SimpleLibraryManagement
                         //to create a new member object
                         Models.Member NewMember = new Models.Member();
                         NewMember.Name = memberName;
+
                         //to register the member using library service
                         libraryService.RegisterMember(NewMember);
                         Console.WriteLine("Member registered successfully.");
