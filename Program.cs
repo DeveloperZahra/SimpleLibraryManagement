@@ -44,11 +44,11 @@ namespace SimpleLibraryManagement
                 {
 
                     case '1':
-                        //to get user input for adding a book ...
+                        //to get user input for adding a book 
                         string title = Validation.StringNamingValidation("Book Title");
                         string author = Validation.StringNamingValidation("Book Author");
 
-                        //to create a new book object ...
+                        //to create a new book object 
                         Models.Book NewBook = new Models.Book();
                         NewBook.Title = title;
                         NewBook.Author = author;
