@@ -21,7 +21,7 @@ namespace SimpleLibraryManagement
 
                 Console.Clear(); // Clear the console screen before displaying the main menu
 
-                Console.WriteLine("====Welcome to the Library Management System====");
+                Console.WriteLine("====Welcome to the Library Management System===="); // Display the system title
                 Console.WriteLine("1. Add Book");
                 Console.WriteLine("2. Register Member");
                 Console.WriteLine("3. Borrow Book");
