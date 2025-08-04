@@ -51,7 +51,7 @@ namespace SimpleLibraryManagement
         // Saves the list of members to the JSON file
         public static void SaveMembers(List<Member> members)
         {
-            var json = JsonSerializer.Serialize(members);
+            var json = JsonSerializer.Serialize(members); // Convert the list of Member objects to a JSON string
             File.WriteAllText(MemberFilePath, json);
         }
 
