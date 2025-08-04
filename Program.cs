@@ -64,7 +64,8 @@ namespace SimpleLibraryManagement
                     case '2':
                         //to get user input for registering a member 
                         string memberName = Validation.StringNamingValidation("Member name");
-                        //to create a new member object ...
+
+                        //to create a new member object
                         Models.Member NewMember = new Models.Member();
                         NewMember.Name = memberName;
                         //to register the member using library service
