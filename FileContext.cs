@@ -12,7 +12,7 @@ namespace SimpleLibraryManagement
     // Static class responsible for handling file operations such as saving and loading data
     public static class FileContext
     {
-        private static string BookFilePath = "books.json";
+        private static string BookFilePath = "books.json"; // Path to the file where book data will be stored or loaded from
         private static string MemberFilePath = "members.json";
         private static string BorrowRecordFilePath = "BorrowRecords.json";
 
