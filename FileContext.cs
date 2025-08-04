@@ -67,6 +67,8 @@ namespace SimpleLibraryManagement
             return JsonSerializer.Deserialize<List<BorrowRecord>>(json) ?? new List<BorrowRecord>(); // Deserialize the JSON string into a list of BorrowRecord objects
                                                                                                      // If deserialization fails or returns null, return an empty list
         }
+
+        // Saves the list of borrow records to the JSON file
         public static void SaveBorrowRecords(List<BorrowRecord> BorrowRecords)
         {
             var json = JsonSerializer.Serialize(BorrowRecords);
