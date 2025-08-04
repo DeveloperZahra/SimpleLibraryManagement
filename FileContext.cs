@@ -23,7 +23,7 @@ namespace SimpleLibraryManagement
             if (!File.Exists(BookFilePath))
                 return new List<Book>();
 
-            var json = File.ReadAllText(BookFilePath);
+            var json = File.ReadAllText(BookFilePath); // Read the entire content of the file as a JSON string
             return JsonSerializer.Deserialize<List<Book>>(json) ?? new List<Book>();
         }
 
