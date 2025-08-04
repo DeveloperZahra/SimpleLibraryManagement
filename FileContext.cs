@@ -43,7 +43,7 @@ namespace SimpleLibraryManagement
             if (!File.Exists(MemberFilePath))
                 return new List<Member>();
 
-            var json = File.ReadAllText(MemberFilePath);
+            var json = File.ReadAllText(MemberFilePath);  // Read the entire content of the members file as a JSON string
             return JsonSerializer.Deserialize<List<Member>>(json) ?? new List<Member>();
         }
         public static void SaveMembers(List<Member> members)
