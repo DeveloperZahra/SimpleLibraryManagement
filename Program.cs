@@ -9,7 +9,7 @@ namespace SimpleLibraryManagement
         {
             IBookRepository bookRepository = new BookRepository(); // Create an instance of the BookRepository using the IBookRepository interface
             IMemberRepository memberRepository = new MemberRepository(); // Create an instance of the MemberRepository using the IMemberRepository interface
-            IBorrowRecordRepository borrowRecordRepository = new BorrowRecordRepository();
+            IBorrowRecordRepository borrowRecordRepository = new BorrowRecordRepository(); // Create an instance of the BorrowRecordRepository using the IBorrowRecordRepository interface
             ILibraryService libraryService = new LibraryService(bookRepository, memberRepository, borrowRecordRepository); 
 
 
