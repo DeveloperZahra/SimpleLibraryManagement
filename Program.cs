@@ -52,7 +52,7 @@ namespace SimpleLibraryManagement
                         Models.Book NewBook = new Models.Book();
 
                         NewBook.Title = title;  // Set the book title
-                        NewBook.Author = author;
+                        NewBook.Author = author;    // Set the book author
                         NewBook.IsAvailable = true;
                         //to add the book using library service
                         libraryService.AddBook(NewBook);
