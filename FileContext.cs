@@ -64,7 +64,8 @@ namespace SimpleLibraryManagement
                 return new List<BorrowRecord>();
 
             var json = File.ReadAllText(BorrowRecordFilePath); // Read the entire content of the borrow records file as a JSON string
-            return JsonSerializer.Deserialize<List<BorrowRecord>>(json) ?? new List<BorrowRecord>();
+            return JsonSerializer.Deserialize<List<BorrowRecord>>(json) ?? new List<BorrowRecord>(); // Deserialize the JSON string into a list of BorrowRecord objects
+                                                                                                     // If deserialization fails or returns null, return an empty list
         }
         public static void SaveBorrowRecords(List<BorrowRecord> BorrowRecords)
         {
