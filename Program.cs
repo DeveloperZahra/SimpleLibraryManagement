@@ -62,7 +62,7 @@ namespace SimpleLibraryManagement
                         break;
 
                     case '2':
-                        //to get user input for registering a member ...
+                        //to get user input for registering a member 
                         string memberName = Validation.StringNamingValidation("Member name");
                         //to create a new member object ...
                         Models.Member NewMember = new Models.Member();
