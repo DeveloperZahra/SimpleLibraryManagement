@@ -44,7 +44,8 @@ namespace SimpleLibraryManagement
                 return new List<Member>();
 
             var json = File.ReadAllText(MemberFilePath);  // Read the entire content of the members file as a JSON string
-            return JsonSerializer.Deserialize<List<Member>>(json) ?? new List<Member>();
+            return JsonSerializer.Deserialize<List<Member>>(json) ?? new List<Member>(); // Deserialize the JSON string into a list of Member objects
+                                                                                         // If deserialization fails or returns null, return an empty list
         }
         public static void SaveMembers(List<Member> members)
         {
