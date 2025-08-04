@@ -58,6 +58,7 @@ namespace SimpleLibraryManagement
                         //to add the book using library service
                         libraryService.AddBook(NewBook);
                         Console.WriteLine("Book added successfully.");
+
                         Additional.HoldScreen();//to hold the screen for user to see the message
                         break;
 
