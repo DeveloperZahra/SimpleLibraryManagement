@@ -72,6 +72,7 @@ namespace SimpleLibraryManagement
                         //to register the member using library service
                         libraryService.RegisterMember(NewMember);
                         Console.WriteLine("Member registered successfully.");
+
                         Additional.HoldScreen();//to hold the screen for user to see the message
                         break;
 
