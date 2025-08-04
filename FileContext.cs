@@ -19,6 +19,7 @@ namespace SimpleLibraryManagement
         // Loads the list of books from the JSON file
         public static List<Book> LoadBooks()
         {
+            // Check if the books file exists; if not, return an empty list
             if (!File.Exists(BookFilePath))
                 return new List<Book>();
 
