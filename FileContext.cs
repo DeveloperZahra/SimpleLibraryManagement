@@ -39,6 +39,7 @@ namespace SimpleLibraryManagement
         // Load the list of member form the JSON file 
         public static List<Member> LoadMembers() 
         {
+            // Check if the members file exists; if it doesn't, return an empty list
             if (!File.Exists(MemberFilePath))
                 return new List<Member>();
 
