@@ -72,7 +72,7 @@ namespace SimpleLibraryManagement
         public static void SaveBorrowRecords(List<BorrowRecord> BorrowRecords)
         {
             var json = JsonSerializer.Serialize(BorrowRecords);  // Convert the list of BorrowRecord objects to a JSON string
-            File.WriteAllText(BorrowRecordFilePath, json);
+            File.WriteAllText(BorrowRecordFilePath, json); // Write the JSON string to the file, overwriting any existing content
         }
 
 
