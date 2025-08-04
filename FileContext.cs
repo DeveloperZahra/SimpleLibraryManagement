@@ -16,6 +16,7 @@ namespace SimpleLibraryManagement
         private static string MemberFilePath = "members.json"; // Path to the file where member data will be stored or loaded from
         private static string BorrowRecordFilePath = "BorrowRecords.json"; // Path to the file where borrow record data will be stored or loaded from
 
+        // Loads the list of books from the JSON file
         public static List<Book> LoadBooks()
         {
             if (!File.Exists(BookFilePath))
