@@ -85,7 +85,7 @@ namespace SimpleLibraryManagement
                         break;
 
                     case '4':
-                        int bookIdToReturn = Validation.IntValidation("Book ID to return");
+                        int bookIdToReturn = Validation.IntValidation("Book ID to return"); // Prompt the user to enter the Book ID to return, with input validation
                         int memberIdToReturn = Validation.IntValidation("Member ID to return the book");
                         libraryService.ReturnBook(bookIdToReturn, memberIdToReturn);
                         break;
