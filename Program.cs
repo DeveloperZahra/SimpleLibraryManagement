@@ -38,6 +38,7 @@ namespace SimpleLibraryManagement
                 // Assumes user enters a valid character representing the choice (e.g., '1', '2', etc.)
                 choice = char.Parse(Console.ReadLine());
 
+
                 //to call the appropriate method based on user choice
                 switch (choice)
                 {
