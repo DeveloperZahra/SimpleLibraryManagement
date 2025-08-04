@@ -78,7 +78,7 @@ namespace SimpleLibraryManagement
 
 
                     case '3':
-                        //to get user input for borrowing a book ...
+                        //to get user input for borrowing a book 
                         int bookIdToBorrow = Validation.IntValidation("Book ID to borrow");
                         int memberIdToBorrow = Validation.IntValidation("Member ID to borrow the book");
                         libraryService.BorrowBook(bookIdToBorrow, memberIdToBorrow);
