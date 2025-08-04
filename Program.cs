@@ -50,7 +50,8 @@ namespace SimpleLibraryManagement
 
                         //to create a new book object 
                         Models.Book NewBook = new Models.Book();
-                        NewBook.Title = title;
+
+                        NewBook.Title = title;  // Set the book title
                         NewBook.Author = author;
                         NewBook.IsAvailable = true;
                         //to add the book using library service
