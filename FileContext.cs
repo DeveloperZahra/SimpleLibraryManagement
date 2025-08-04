@@ -24,7 +24,8 @@ namespace SimpleLibraryManagement
                 return new List<Book>();
 
             var json = File.ReadAllText(BookFilePath); // Read the entire content of the file as a JSON string
-            return JsonSerializer.Deserialize<List<Book>>(json) ?? new List<Book>();
+            return JsonSerializer.Deserialize<List<Book>>(json) ?? new List<Book>(); // Deserialize the JSON string into a list of Book objects
+                                                                                     // If deserialization fails or returns null, return an empty list
         }
 
         public static void SaveBooks(List<Book> books)
