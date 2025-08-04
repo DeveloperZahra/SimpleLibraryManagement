@@ -53,7 +53,8 @@ namespace SimpleLibraryManagement
 
                         NewBook.Title = title;  // Set the book title
                         NewBook.Author = author;    // Set the book author
-                        NewBook.IsAvailable = true;
+                        NewBook.IsAvailable = true; // Mark the book as available by default
+
                         //to add the book using library service
                         libraryService.AddBook(NewBook);
                         Console.WriteLine("Book added successfully.");
