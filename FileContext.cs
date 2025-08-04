@@ -36,7 +36,7 @@ namespace SimpleLibraryManagement
         }
 
 
-        // Load the list of member form the JSON file 
+        // Load the list of members form the JSON file 
         public static List<Member> LoadMembers() 
         {
             // Check if the members file exists; if it doesn't, return an empty list
@@ -55,7 +55,8 @@ namespace SimpleLibraryManagement
             File.WriteAllText(MemberFilePath, json);     // Write the JSON string to the file, overwriting any existing content
         }
 
-        //to load and save BorrowRecord data to file ...
+
+        // load the list of  BorrowRecord from the JSON file
         public static List<BorrowRecord> LoadBorrowRecords()
         {
             if (!File.Exists(BorrowRecordFilePath))
