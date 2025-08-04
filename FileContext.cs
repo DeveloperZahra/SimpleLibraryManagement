@@ -28,13 +28,13 @@ namespace SimpleLibraryManagement
                                                                                      // If deserialization fails or returns null, return an empty list
         }
 
-
-        // Saves the list of books to the JSON file
+      // Saves the list of books to the JSON file
         public static void SaveBooks(List<Book> books)
         {
             var json = JsonSerializer.Serialize(books); // Convert the list of Book objects to a JSON string
             File.WriteAllText(BookFilePath, json); // Write the JSON string to the file, overwriting any existing content
         }
+
 
         // Load the list of member form the JSON file 
         public static List<Member> LoadMembers() 
@@ -47,6 +47,8 @@ namespace SimpleLibraryManagement
             return JsonSerializer.Deserialize<List<Member>>(json) ?? new List<Member>(); // Deserialize the JSON string into a list of Member objects
                                                                                          // If deserialization fails or returns null, return an empty list
         }
+
+        // Saves the list of members to the JSON file
         public static void SaveMembers(List<Member> members)
         {
             var json = JsonSerializer.Serialize(members);
