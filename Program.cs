@@ -33,7 +33,9 @@ namespace SimpleLibraryManagement
                 Console.WriteLine("7. View All Borrow Records");
                 Console.WriteLine("0. Exit");
                 Console.WriteLine("Please enter your choice: "); // Prompt the user to enter a choice
-                //to get user input
+
+                // Read a single character from user input and parse it to a `char`
+                // Assumes user enters a valid character representing the choice (e.g., '1', '2', etc.)
                 choice = char.Parse(Console.ReadLine());
 
                 //to call the appropriate method based on user choice
