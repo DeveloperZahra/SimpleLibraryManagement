@@ -63,7 +63,7 @@ namespace SimpleLibraryManagement
             if (!File.Exists(BorrowRecordFilePath))
                 return new List<BorrowRecord>();
 
-            var json = File.ReadAllText(BorrowRecordFilePath);
+            var json = File.ReadAllText(BorrowRecordFilePath); // Read the entire content of the borrow records file as a JSON string
             return JsonSerializer.Deserialize<List<BorrowRecord>>(json) ?? new List<BorrowRecord>();
         }
         public static void SaveBorrowRecords(List<BorrowRecord> BorrowRecords)
