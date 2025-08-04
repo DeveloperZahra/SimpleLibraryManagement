@@ -34,7 +34,7 @@ namespace SimpleLibraryManagement
             File.WriteAllText(BookFilePath, json);
         }
 
-
+        // Saves the list of books to the JSON file
         public static List<Member> LoadMembers()
         {
             if (!File.Exists(MemberFilePath))
