@@ -17,11 +17,13 @@ namespace SimpleLibraryManagement
             bool exit = true;
             do
             {
-                //to display library system menu options
+              
 
                 Console.Clear(); // Clear the console screen before displaying the main menu
 
                 Console.WriteLine("====Welcome to the Library Management System===="); // Display the system title
+
+               //to display library system menu options
                 Console.WriteLine("1. Add Book");
                 Console.WriteLine("2. Register Member");
                 Console.WriteLine("3. Borrow Book");
