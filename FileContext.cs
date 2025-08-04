@@ -59,6 +59,7 @@ namespace SimpleLibraryManagement
         // load the list of  BorrowRecord from the JSON file
         public static List<BorrowRecord> LoadBorrowRecords()
         {
+            // Check if the borrow records file exists; if not, return an empty list
             if (!File.Exists(BorrowRecordFilePath))
                 return new List<BorrowRecord>();
 
