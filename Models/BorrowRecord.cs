@@ -18,7 +18,7 @@ namespace SimpleLibraryManagement.Models
         public BorrowRecord() // Constructor for the BorrowRecord class
         {
             BorrowRecordCount++;  // Increment the borrow record count every time a new record is created
-            BRId = BorrowRecordCount;
+            BRId = BorrowRecordCount;  // Assign a unique ID to the borrow record based on the current count
         }
 
 
