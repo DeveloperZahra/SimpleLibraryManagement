@@ -15,7 +15,7 @@ namespace SimpleLibraryManagement.Models
      
 
         public static int MemberCount = 0; // Static variable to keep track of the total number of members created
-        public Member()
+        public Member() // Constructor for the Member class
         {
             MemberCount++;
             MemberId = MemberCount;
