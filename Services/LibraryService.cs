@@ -117,7 +117,7 @@ namespace SimpleLibraryManagement.Services
             }
         }
 
-
+        // Displays a list of all registered library members
         public void PrintAllMembers()
         {
             var members = _MemberRepository.GetAllMembers();
