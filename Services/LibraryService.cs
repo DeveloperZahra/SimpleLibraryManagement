@@ -141,7 +141,7 @@ namespace SimpleLibraryManagement.Services
         // Displays a list of all borrow records in the library system
         public void PrintAllBorrowRecords()
         {
-            var borrowRecords = _BorrowRecordRepository.GetAllBorrowRecords();
+            var borrowRecords = _BorrowRecordRepository.GetAllBorrowRecords(); // Retrieve all borrow records from the repository
             if (borrowRecords.Count == 0)
             {
                 Console.WriteLine("No borrow records found.");
