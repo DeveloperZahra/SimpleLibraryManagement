@@ -97,8 +97,8 @@ namespace SimpleLibraryManagement.Services
         // Retrieve all books from the repository
         public void PrintAllBooks()
         {
-            var books = _BookRepository.GetAllBooks();
-            if (books.Count == 0)
+            var books = _BookRepository.GetAllBooks(); 
+            if (books.Count == 0)  // Check if the library has no books
             {
                 Console.WriteLine("No books available in the library.");
             }
