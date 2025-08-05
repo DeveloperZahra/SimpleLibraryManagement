@@ -31,8 +31,8 @@ namespace SimpleLibraryManagement.Services
         
        public  void RegisterMember(Member member) // Registers a new member in the system using the member repository
         {
-            _MemberRepository.AddMember(member);
-       }
+            _MemberRepository.AddMember(member); // Call the AddMember method from the member repository to store the member data
+        }
 
 
         public void BorrowBook(int bookId, int memberId)
