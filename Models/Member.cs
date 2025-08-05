@@ -12,11 +12,15 @@ namespace SimpleLibraryManagement.Models
         public int MemberId { get; private set; } // Unique identifier for each member (set privately, read-only from outside)
         public string Name { get;  set; }    // Name of the member
 
-        // Constructor to initialize the member with ID and Name
-        public Member(int id, string name)
+     
+
+        public static int MemberCount = 0; // Static variable to keep track of the total number of members created
+        public Member()
         {
-            MemberId = id;
-            Name = name;
+            MemberCount++;
+            MemberId = MemberCount;
         }
     }
+
 }
+
