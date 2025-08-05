@@ -120,7 +120,7 @@ namespace SimpleLibraryManagement.Services
         // Displays a list of all registered library members
         public void PrintAllMembers()
         {
-            var members = _MemberRepository.GetAllMembers();
+            var members = _MemberRepository.GetAllMembers();   // Retrieve all members from the member repository
             if (members.Count == 0)
             {
                 Console.WriteLine("No members registered in the library.");
