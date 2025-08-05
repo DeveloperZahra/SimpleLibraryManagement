@@ -89,7 +89,7 @@ namespace SimpleLibraryManagement.Services
             }
             else
             {
-                throw new Exception("Book or member does not exist.");
+                throw new Exception("Book or member does not exist.");  // If either the book or member does not exist, throw an exception
             }
         }
 
