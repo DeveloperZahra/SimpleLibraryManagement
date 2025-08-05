@@ -104,7 +104,7 @@ namespace SimpleLibraryManagement.Services
             }
             else
             {
-                Console.WriteLine("Books in the library:");
+                Console.WriteLine("Books in the library:");  // Display header for book list
                 foreach (var book in books)
                 {
                     Console.WriteLine($"ID: {book.BookId}\n" +
