@@ -15,7 +15,7 @@ namespace SimpleLibraryManagement.Models
         public DateTime BorrowDate { get; set; }    // Date when the book was borrowed
         public DateTime ReturnDate { get; set; } // Expected return date of the borrowed book
         public static int BorrowRecordCount = 0; // Static variable to keep track of the total number of borrow records created
-        public BorrowRecord()
+        public BorrowRecord() // Constructor for the BorrowRecord class
         {
             BorrowRecordCount++;
             BRId = BorrowRecordCount;
