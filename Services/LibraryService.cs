@@ -94,7 +94,7 @@ namespace SimpleLibraryManagement.Services
         }
 
 
-
+        // Retrieve all books from the repository
         public void PrintAllBooks()
         {
             var books = _BookRepository.GetAllBooks();
