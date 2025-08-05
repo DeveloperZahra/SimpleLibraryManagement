@@ -73,7 +73,8 @@ namespace SimpleLibraryManagement.Services
                 // Search for an active borrow record (not yet returned) for the given book and member
                 var borrowRecord = _BorrowRecordRepository.GetAllBorrowRecords()
                     .FirstOrDefault(br => br.BookId == book.BookId && br.MemberId == member.MemberId && br.ReturnDate == null);
-                if (borrowRecord != null)
+
+                if (borrowRecord != null)    // If a matching borrow record is found
                 {
                     _BorrowRecordRepository.UpdateReturnDate(borrowRecord.BorrowRecordId, DateTime.Now);
                     _BookRepository.UpdateBookAvailable(book.BookId);
