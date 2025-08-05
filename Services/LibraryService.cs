@@ -19,7 +19,7 @@ namespace SimpleLibraryManagement.Services
         public LibraryService(IBookRepository book_repository, IMemberRepository memberRepository, IBorrowRecordRepository borrowRecordRepository)
         {
             _BookRepository = book_repository; // Assign the injected book repository to the private field
-            _MemberRepository = memberRepository;
+            _MemberRepository = memberRepository;  // Assign the injected member repository to the private field
             _BorrowRecordRepository = borrowRecordRepository;
         }
 
