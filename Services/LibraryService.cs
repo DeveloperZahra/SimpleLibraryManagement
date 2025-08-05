@@ -11,7 +11,7 @@ namespace SimpleLibraryManagement.Services
     public  class LibraryService 
     {
         private readonly IBookRepository _BookRepository; // Reference to the book repository used for managing book-related data (e.g., add, get, update books)
-        private readonly IMemberRepository _MemberRepository;
+        private readonly IMemberRepository _MemberRepository; // Reference to the member repository used for handling member-related operations (e.g., register, retrieve members)
         private readonly IBorrowRecordRepository _BorrowRecordRepository;
 
         public LibraryService(IBookRepository book_repository, IMemberRepository memberRepository, IBorrowRecordRepository borrowRecordRepository)
