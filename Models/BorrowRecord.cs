@@ -17,7 +17,7 @@ namespace SimpleLibraryManagement.Models
         public static int BorrowRecordCount = 0; // Static variable to keep track of the total number of borrow records created
         public BorrowRecord() // Constructor for the BorrowRecord class
         {
-            BorrowRecordCount++;
+            BorrowRecordCount++;  // Increment the borrow record count every time a new record is created
             BRId = BorrowRecordCount;
         }
 
