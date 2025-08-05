@@ -46,7 +46,7 @@ namespace SimpleLibraryManagement.Services
                 {
                     BookId = book.BookId, // ID of the borrowed book
                     MemberId = member.MemberId, // ID of the borrowing member
-                    BorrowDate = DateTime.Now,
+                    BorrowDate = DateTime.Now,  // Current date/time as borrow date
                     ReturnDate = null
                 };
                 _BorrowRecordRepository.AddBorrowRecord(borrowRecord);
