@@ -56,7 +56,7 @@ namespace SimpleLibraryManagement.Services
             }
             else
             {
-                throw new Exception("Book is not available or member does not exist.");
+                throw new Exception("Book is not available or member does not exist.");  // Throw an exception if the book is not available or the member/book doesn't exist
                 Additional.HoldScreen();//to hold the screen for user to see the message
             }
         }
