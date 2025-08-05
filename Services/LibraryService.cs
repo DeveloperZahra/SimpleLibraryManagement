@@ -29,8 +29,8 @@ namespace SimpleLibraryManagement.Services
         }
 
         
-       public  void RegisterMember(Member member)
-       {
+       public  void RegisterMember(Member member) // Registers a new member in the system using the member repository
+        {
             _MemberRepository.AddMember(member);
        }
 
