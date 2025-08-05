@@ -18,7 +18,7 @@ namespace SimpleLibraryManagement.Models
 
         public Book() // Constructor for the Book class
         {
-            BookCount++;
+            BookCount++; // Increment the book count each time a new book is created
             BookId = BookCount;
         }
 
