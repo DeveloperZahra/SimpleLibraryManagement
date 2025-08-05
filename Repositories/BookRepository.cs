@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SimpleLibraryManagement.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
@@ -7,21 +8,22 @@ using System.Threading.Tasks;
 
 namespace SimpleLibraryManagement.Repositories
 {
-    public class BookRepository : IBookRepository
+    public class BookRepository 
     {
-        public void AddBook(LibraryBook Book)
+        public void AddBook(Book book)
         {
-            var Books = GetAllBooks();
-            Books.Add(Book);
-            FileContext.SaveBooks(Books);
+            var books = GetAllBooks();
+            books.Add(book);
+            FileContext.SaveBooks(books);
         }
 
 
-        public LibraryBook GetBook(int id)
 
+        public List<Book> GetAllBooks()
         {
-            return GetAllBooks().FirstOrDefault(x => x.Id == id);
+            return FileContext.LoadBooks();
         }
+
 
 
         public void UpdateBook(LibraryBook Book)
