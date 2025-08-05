@@ -101,7 +101,7 @@ namespace SimpleLibraryManagement
                         break;
 
                     case '7':
-                        libraryService.PrintAllBorrowRecords();
+                        libraryService.PrintAllBorrowRecords(); // Call the method in library service to display all borrow records
                         Additional.HoldScreen();//to hold the screen for user to see the message
                         break;
 
