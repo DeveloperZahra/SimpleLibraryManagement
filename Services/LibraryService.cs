@@ -35,6 +35,7 @@ namespace SimpleLibraryManagement.Services
         }
 
 
+        // Allows a member to borrow a book if it's available
         public void BorrowBook(int bookId, int memberId)
         {
             var book = _BookRepository.GetBookById(bookId);
