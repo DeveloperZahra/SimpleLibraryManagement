@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SimpleLibraryManagement.Services
 {
-    public  class LibraryService 
+    public class LibraryService : ILibraryService
     {
         private readonly IBookRepository _BookRepository; // Reference to the book repository used for managing book-related data (e.g., add, get, update books)
         private readonly IMemberRepository _MemberRepository; // Reference to the member repository used for handling member-related operations (e.g., register, retrieve members)
@@ -28,8 +28,8 @@ namespace SimpleLibraryManagement.Services
             _BookRepository.AddBook(book); // Call the AddBook method from the book repository to save the book
         }
 
-        
-       public  void RegisterMember(Member member) // Registers a new member in the system using the member repository
+
+        public void RegisterMember(Member member) // Registers a new member in the system using the member repository
         {
             _MemberRepository.AddMember(member); // Call the AddMember method from the member repository to store the member data
         }
@@ -94,7 +94,7 @@ namespace SimpleLibraryManagement.Services
         }
 
 
-       
+
         public void PrintAllBooks()
         {
             var books = _BookRepository.GetAllBooks();  // Retrieve all books from the repository
@@ -150,7 +150,7 @@ namespace SimpleLibraryManagement.Services
             {
                 Console.WriteLine("Borrow Records:");  // Display header for the list of borrow records
 
-                 // Loop through each borrow record and print its details
+                // Loop through each borrow record and print its details
                 foreach (var record in borrowRecords)
                 {
                     Console.WriteLine($"Record ID: {record.BorrowRecordId}\n" +
