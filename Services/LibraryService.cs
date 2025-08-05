@@ -14,6 +14,8 @@ namespace SimpleLibraryManagement.Services
         private readonly IMemberRepository _MemberRepository; // Reference to the member repository used for handling member-related operations (e.g., register, retrieve members)
         private readonly IBorrowRecordRepository _BorrowRecordRepository; // Reference to the borrow record repository used for managing borrow/return transactions and history
 
+        // Constructor for the LibraryService class
+        // Uses dependency injection to initialize the repositories
         public LibraryService(IBookRepository book_repository, IMemberRepository memberRepository, IBorrowRecordRepository borrowRecordRepository)
         {
             _BookRepository = book_repository;
