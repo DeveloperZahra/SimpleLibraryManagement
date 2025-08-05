@@ -62,6 +62,7 @@ namespace SimpleLibraryManagement.Services
         }
 
 
+        // Allows a member to return a borrowed book
         public void ReturnBook(int bookId, int memberId)
         {
             var book = _BookRepository.GetBookById(bookId);
