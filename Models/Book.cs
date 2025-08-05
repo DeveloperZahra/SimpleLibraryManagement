@@ -16,7 +16,7 @@ namespace SimpleLibraryManagement.Models
 
         public static int BookCount = 0; // Static variable to keep track of the total number of Book instances created
 
-        public Book()
+        public Book() // Constructor for the Book class
         {
             BookCount++;
             BookId = BookCount;
