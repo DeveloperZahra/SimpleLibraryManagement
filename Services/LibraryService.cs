@@ -25,7 +25,7 @@ namespace SimpleLibraryManagement.Services
 
         public void AddBook(Book book) // Adds a new book to the system using the book repository
         {
-            _BookRepository.AddBook(book);
+            _BookRepository.AddBook(book); // Call the AddBook method from the book repository to save the book
         }
 
         
