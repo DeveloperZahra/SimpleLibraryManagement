@@ -76,7 +76,7 @@ namespace SimpleLibraryManagement.Services
 
                 if (borrowRecord != null)    // If a matching borrow record is found
                 {
-                    _BorrowRecordRepository.UpdateReturnDate(borrowRecord.BorrowRecordId, DateTime.Now);
+                    _BorrowRecordRepository.UpdateReturnDate(borrowRecord.BorrowRecordId, DateTime.Now);    // Update the return date in the borrow record to the current date/time
                     _BookRepository.UpdateBookAvailable(book.BookId);
                     Console.WriteLine($"Book '{book.Title}' returned by member '{member.Name}'.");
                     Additional.HoldScreen();//to hold the screen for user to see the message
