@@ -78,7 +78,7 @@ namespace SimpleLibraryManagement.Services
                 {
                     _BorrowRecordRepository.UpdateReturnDate(borrowRecord.BorrowRecordId, DateTime.Now);    // Update the return date in the borrow record to the current date/time
                     _BookRepository.UpdateBookAvailable(book.BookId);  // Mark the book as available again
-                    Console.WriteLine($"Book '{book.Title}' returned by member '{member.Name}'.");
+                    Console.WriteLine($"Book '{book.Title}' returned by member '{member.Name}'."); // Inform the user of the successful return
                     Additional.HoldScreen();//to hold the screen for user to see the message
                 }
                 else
