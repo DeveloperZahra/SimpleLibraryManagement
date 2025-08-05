@@ -149,6 +149,8 @@ namespace SimpleLibraryManagement.Services
             else
             {
                 Console.WriteLine("Borrow Records:");  // Display header for the list of borrow records
+
+                 // Loop through each borrow record and print its details
                 foreach (var record in borrowRecords)
                 {
                     Console.WriteLine($"Record ID: {record.BorrowRecordId}\n" +
