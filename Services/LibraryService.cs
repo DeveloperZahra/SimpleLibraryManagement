@@ -45,7 +45,7 @@ namespace SimpleLibraryManagement.Services
                 var borrowRecord = new BorrowRecord  // Create a new borrow record
                 {
                     BookId = book.BookId, // ID of the borrowed book
-                    MemberId = member.MemberId,
+                    MemberId = member.MemberId, // ID of the borrowing member
                     BorrowDate = DateTime.Now,
                     ReturnDate = null
                 };
