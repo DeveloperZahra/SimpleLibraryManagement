@@ -70,6 +70,7 @@ namespace SimpleLibraryManagement.Services
 
             if (book != null && member != null)   // Check that both the book and the member exist
             {
+                // Search for an active borrow record (not yet returned) for the given book and member
                 var borrowRecord = _BorrowRecordRepository.GetAllBorrowRecords()
                     .FirstOrDefault(br => br.BookId == book.BookId && br.MemberId == member.MemberId && br.ReturnDate == null);
                 if (borrowRecord != null)
