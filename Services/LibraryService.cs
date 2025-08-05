@@ -144,7 +144,7 @@ namespace SimpleLibraryManagement.Services
             var borrowRecords = _BorrowRecordRepository.GetAllBorrowRecords(); // Retrieve all borrow records from the repository
             if (borrowRecords.Count == 0) // Check if there are no borrow records
             {
-                Console.WriteLine("No borrow records found.");
+                Console.WriteLine("No borrow records found."); // Inform the user that no records exist
             }
             else
             {
