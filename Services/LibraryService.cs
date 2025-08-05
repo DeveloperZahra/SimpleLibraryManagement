@@ -138,7 +138,7 @@ namespace SimpleLibraryManagement.Services
 
         }
 
-
+        // Displays a list of all borrow records in the library system
         public void PrintAllBorrowRecords()
         {
             var borrowRecords = _BorrowRecordRepository.GetAllBorrowRecords();
