@@ -142,7 +142,7 @@ namespace SimpleLibraryManagement.Services
         public void PrintAllBorrowRecords()
         {
             var borrowRecords = _BorrowRecordRepository.GetAllBorrowRecords(); // Retrieve all borrow records from the repository
-            if (borrowRecords.Count == 0)
+            if (borrowRecords.Count == 0) // Check if there are no borrow records
             {
                 Console.WriteLine("No borrow records found.");
             }
