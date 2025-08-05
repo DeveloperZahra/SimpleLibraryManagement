@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SimpleLibraryManagement.Models;
 
 namespace SimpleLibraryManagement.Repositories
 {
-    internal class IMemberRepository
+    public interface IMemberRepository
     {
+        void AddMember(Member member);
+        List<Member> GetAllMembers();
+        Member GetMember(int Memberid);
+        void UpdateMembers(Member member);
     }
 }

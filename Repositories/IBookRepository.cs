@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SimpleLibraryManagement.Repositories
+﻿namespace SimpleLibraryManagement.Repositories
 {
-    internal class IBookRepository
+    public interface IBookRepository
     {
+        void AddBook(LibraryBook Book);
+        List<LibraryBook> GetAllBooks();
+        LibraryBook GetBook(int id);
+        void UpdateBook(LibraryBook Book);
     }
 }

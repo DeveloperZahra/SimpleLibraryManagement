@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SimpleLibraryManagement.Models;
 
 namespace SimpleLibraryManagement.Repositories
 {
-    internal class IBorrowRecordRepository
+    public interface IBorrowRecordRepository
     {
+        void AddBorrowRecord(BorrowRecord borrowRecord);
+        borrowRecord GatborrowRecord(int BRId);
+        List<BorrowRecord> GetAllborrowRecords();
+        void UpdateborrowRecord(BorrowRecord borrowRecord);
     }
 }

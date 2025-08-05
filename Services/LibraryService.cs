@@ -18,7 +18,7 @@ namespace SimpleLibraryManagement.Services
         // Uses dependency injection to initialize the repositories
         public LibraryService(IBookRepository book_repository, IMemberRepository memberRepository, IBorrowRecordRepository borrowRecordRepository)
         {
-            _BookRepository = book_repository;
+            _BookRepository = book_repository; // Assign the injected book repository to the private field
             _MemberRepository = memberRepository;
             _BorrowRecordRepository = borrowRecordRepository;
         }
