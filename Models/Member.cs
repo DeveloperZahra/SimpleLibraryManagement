@@ -18,7 +18,7 @@ namespace SimpleLibraryManagement.Models
         public Member() // Constructor for the Member class
         {
             MemberCount++;  // Increment the member count each time a new member is created
-            MemberId = MemberCount;
+            MemberId = MemberCount; // Assign a unique MemberId based on the current count
         }
     }
 
