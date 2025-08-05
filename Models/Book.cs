@@ -14,6 +14,13 @@ namespace SimpleLibraryManagement.Models
         public string Author  { get; set; }   // Author of the book
         public bool IsAvailable { get; set; } // Indicates whether the book is currently available for borrowing
 
-      
+        public static int BookCount = 0; // Static variable to keep track of the total number of Book instances created
+
+        public Book()
+        {
+            BookCount++;
+            BookId = BookCount;
+        }
+
     }
 }
