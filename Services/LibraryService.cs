@@ -128,6 +128,7 @@ namespace SimpleLibraryManagement.Services
             else
             {
                 Console.WriteLine("Registered members:");   // Print a header for the member list
+                // Loop through each member and display their details
                 foreach (var member in members)
                 {
                     Console.WriteLine($"ID: {member.MemberId}\n" +
