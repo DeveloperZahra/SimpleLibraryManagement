@@ -20,7 +20,7 @@ namespace SimpleLibraryManagement.Services
         {
             _BookRepository = book_repository; // Assign the injected book repository to the private field
             _MemberRepository = memberRepository;  // Assign the injected member repository to the private field
-            _BorrowRecordRepository = borrowRecordRepository;
+            _BorrowRecordRepository = borrowRecordRepository; // Assign the injected borrow record repository to the private field
         }
 
         public void AddBook(Book book)
