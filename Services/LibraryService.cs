@@ -40,7 +40,7 @@ namespace SimpleLibraryManagement.Services
         {
             var book = _BookRepository.GetBookById(bookId); // Retrieve the book by its ID from the repository
             var member = _MemberRepository.GetMemberById(memberId);  // Retrieve the member by their ID from the repository
-            if (book != null && member != null && book.IsAvailable)
+            if (book != null && member != null && book.IsAvailable) // Proceed only if the book and member exist and the book is available
             {
                 var borrowRecord = new BorrowRecord
                 {
