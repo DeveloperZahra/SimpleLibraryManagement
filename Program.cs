@@ -106,7 +106,7 @@ namespace SimpleLibraryManagement
                         break;
 
                     case '0':
-                        exit = false;
+                        exit = false; // Set the exit flag to false to stop the main loop and exit the program
                         Console.WriteLine("Exiting the system. Goodbye!");
                         Additional.HoldScreen();//to hold the screen for user to see the message
                         break;
