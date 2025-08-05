@@ -121,7 +121,7 @@ namespace SimpleLibraryManagement.Services
         public void PrintAllMembers()
         {
             var members = _MemberRepository.GetAllMembers();   // Retrieve all members from the member repository
-            if (members.Count == 0)
+            if (members.Count == 0)   // Check if there are no members in the system
             {
                 Console.WriteLine("No members registered in the library.");
             }
