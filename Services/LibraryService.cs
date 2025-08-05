@@ -23,7 +23,7 @@ namespace SimpleLibraryManagement.Services
             _BorrowRecordRepository = borrowRecordRepository; // Assign the injected borrow record repository to the private field
         }
 
-        public void AddBook(Book book)
+        public void AddBook(Book book) // Adds a new book to the system using the book repository
         {
             _BookRepository.AddBook(book);
         }
