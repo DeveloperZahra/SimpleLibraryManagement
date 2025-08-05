@@ -51,7 +51,7 @@ namespace SimpleLibraryManagement.Services
                 };
                 _BorrowRecordRepository.AddBorrowRecord(borrowRecord);  // Save the borrow record to the system
                 _BookRepository.UpdateBookAvailable(book.BookId);   // Update the book's availability status to unavailable
-                Console.WriteLine($"Book '{book.Title}' borrowed by member '{member.Name}'.");
+                Console.WriteLine($"Book '{book.Title}' borrowed by member '{member.Name}'.");    // Display success message
                 Additional.HoldScreen();//to hold the screen for user to see the message
             }
             else
