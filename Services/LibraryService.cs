@@ -83,7 +83,7 @@ namespace SimpleLibraryManagement.Services
                 }
                 else
                 {
-                    throw new Exception("No active borrow record found for this book and member.");
+                    throw new Exception("No active borrow record found for this book and member.");   // If no matching borrow record found, display an error message
                     Additional.HoldScreen();//to hold the screen for user to see the message
                 }
             }
