@@ -96,7 +96,7 @@ namespace SimpleLibraryManagement
                         break;
 
                     case '6':
-                        libraryService.PrintAllMembers();
+                        libraryService.PrintAllMembers(); // Call the method in library service to print/display all registered members
                         Additional.HoldScreen();//to hold the screen for user to see the message
                         break;
 
